@@ -22,12 +22,12 @@ const Contact = () => {
     {
       icon: <Github className="w-5 h-5 transition-transform group-hover:scale-125" />,
       name: "GitHub",
-      url: "https://github.com/pasupalasuryaprakash"
+      url: "https://github.com/surycodes"
     },
     {
       icon: <Linkedin className="w-5 h-5 transition-transform group-hover:scale-125" />,
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/surya-prakash-pasupala-08705529a/?originalSubdomain=in"
+      url: "https://www.linkedin.com/feed/"
     },
     {
       icon: <Instagram className="w-5 h-5 transition-transform group-hover:scale-125" />,

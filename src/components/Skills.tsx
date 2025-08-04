@@ -34,7 +34,7 @@ const Skills = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="section-title text-center hover:text-portfolio-green transition-colors duration-300">Skills & Tools</h2>
-          <p className="section-subtitle text-center">
+          <p className="section-subtitle textalign-center">
             My technical skills and the tools I use to bring ideas to life
           </p>
         </div>

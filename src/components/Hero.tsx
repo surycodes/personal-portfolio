@@ -40,7 +40,7 @@ const Hero = () => {
               </a>
               <a 
                 href="/lovable-uploads/Dhanush_Resume.jpg" 
-                download="Dhanush_Resume.jpg"
+                download="res.jpg"
                 className="btn-secondary flex items-center"
               >
                 <Download className="w-4 h-4 mr-1" /> Download Resume

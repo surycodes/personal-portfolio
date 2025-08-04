@@ -5,7 +5,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Github className="w-5 h-5" />,
-      url: "https://github.com/pasupalasuryaprakash",
+      url: "https://github.com/surycodes",
       label: "GitHub"
     },
     {

@@ -6,7 +6,7 @@ const Education = () => {
     {
       degree: "B.Tech Computer Science",
       institution: "CMR Institute of Technology",
-      score: "CGPA: 8.05",
+      score: "CGPA: 75%",
       year: "2022 - 2026",
       description: "Specialized in Artificial Intellegence and Machine Learning with distinction."
     },
