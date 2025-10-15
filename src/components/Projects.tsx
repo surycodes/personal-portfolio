@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "DSA Vault",
       category: "React",
-      image: "public/lovable-uploads/cyber-security-concept-digital-art.jpg",
+      image: "https://pyq-nest.vercel.app/image/dsa-course.jpg",
       description: "**DSA Vault** is a curated collection of Data Structures and Algorithms questions for efficient practice and interview preparation..",
       link: "https://github.com/surycodes",
       github: "https://github.com/surycodes"
