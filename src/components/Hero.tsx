@@ -39,7 +39,7 @@ const Hero = () => {
                 View My Portfolio
               </a>
               <a 
-                href="/lovable-uploads/Dhanush_Resume.jpg" 
+                href="lovable-uploads/res.jpg" 
                 download="res.jpg"
                 className="btn-secondary flex items-center"
               >
