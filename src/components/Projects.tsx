@@ -9,15 +9,15 @@ const Projects = () => {
       category: "React",
       image: "https://i.ytimg.com/vi/7-nbYhAqG-I/maxresdefault.jpg",
       description: "A simple and responsive YouTube Clone built with modern web technologies.",
-      link: "https://github.com/surycodes",
+      link: "https://youtube-clone-flax-ten-37.vercel.app/",
       github: "https://github.com/surycodes"
     },
     {
-      title: "To-Do List Application",
+      title: "DiabetesPredictionSystem",
       category: "Web App",
-      image: "https://i.ibb.co/HfYLvXTX/1.jpg",
-      description: "A responsive React-based To-Do List app with a clean, professional UI, featuring task addition, deletion, and reordering functionality..",
-      link: "https://github.com/surycodes",
+      image: "https://media.licdn.com/dms/image/v2/D5622AQEvuXdhrlCpiA/feedshare-shrink_800/feedshare-shrink_800/0/1721559130671?e=2147483647&v=beta&t=xtpI-wMMPeb9BAz2nJ0ANwwDc52N0RNL4F_dBHFlu48",
+      description: "DiabetesPredictionSystem is a Streamlit app that predicts Diabetes using Logistic Regression on the Pima Indians Dataset based on user-input health metrics.",
+      link: "https://diabemate-bsy2p2np9dndkfnenn3nyw.streamlit.app/",
       github: "https://github.com/surycodes"
     },
     {
@@ -25,7 +25,7 @@ const Projects = () => {
       category: "React",
       image: "https://pyq-nest.vercel.app/image/dsa-course.jpg",
       description: "**DSA Vault** is a curated collection of Data Structures and Algorithms questions for efficient practice and interview preparation..",
-      link: "https://github.com/surycodes",
+      link: "https://portfolio-lac-five-85.vercel.app/",
       github: "https://github.com/surycodes"
     },
     {
