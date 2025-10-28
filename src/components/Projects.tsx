@@ -31,7 +31,7 @@ const Projects = () => {
     {
       title: "E-commerce Website",
       category: "Full Stack",
-      image: "https://www.figma.com/community/resource/780f2089-51f3-4bc4-8d94-834c8e9042fb/thumbnail",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8Q7fjjPq2qlvIBY1LsOyvdzCVAszx4sesmQnETM--CFKkVZ9eBFoJUNB3kZwSUI38G4&usqp=CAU",
       description: "A fully responsive e-commerce platform with payment integration.",
       link: "https://github.com/surycodes",
       github: "https://github.com/surycodes"
