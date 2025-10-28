@@ -25,7 +25,7 @@ const Projects = () => {
       category: "React",
       image: "https://pyq-nest.vercel.app/image/dsa-course.jpg",
       description: "**DSA Vault** is a curated collection of Data Structures and Algorithms questions for efficient practice and interview preparation..",
-      link: "https://portfolio-lac-five-85.vercel.app/",
+      link: "https://dsa-vault-one.vercel.app/",
       github: "https://github.com/surycodes"
     },
     {
