@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { ExternalLink, Github, Shuffle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import movieImage from "../assets/movie.png";
+import diabetesImage from "../assets/diabetes.png";
+import datastructuresImage from "../assets/datastructures.jpg";
 
 interface Project {
   title: string;
@@ -19,33 +22,33 @@ const RandomProject = () => {
       category: "React",
       image: "https://i.ytimg.com/vi/7-nbYhAqG-I/maxresdefault.jpg",
       description: "A simple and responsive YouTube Clone built with modern web technologies.",
-      link: "#",
+      link: "https://github.com/surycodes",
       github: "https://github.com/surycodes"
     },
-    {
-      title: "To-Do List Application",
-      category: "Web App",
-      image: "https://i.ibb.co/HfYLvXTX/1.jpg",
-      description: "A responsive React-based To-Do List app with a clean, professional UI, featuring task addition, deletion, and reordering functionality..",
-      link: "#",
-      github: "https://github.com/surycodes"
-    },
-    {
-      title: "DSA Vault",
-      category: "React",
-      image: "public/lovable-uploads/cyber-security-concept-digital-art.jpg",
-      description: "**DSA Vault** is a curated collection of Data Structures and Algorithms questions for efficient practice and interview preparation..",
-      link: "#",
-      github: "https://github.com/surycodes"
-    },
-    {
-      title: "E-commerce Website",
-      category: "Full Stack",
-      image: "",
-      description: "A fully responsive e-commerce platform with payment integration.",
-      link: "#",
-      github: "https://github.com/surycodes"
-    }
+  {
+    title: "DiabetesPredictionSystem",
+    category: "Machine Learning",
+    image: diabetesImage,
+    description: "DiabetesPredictionSystem is a Streamlit app that predicts Diabetes using Logistic Regression on the Pima Indians Dataset based on user-input health metrics.",
+    link: "https://diabemate-bsy2p2np9dndkfnenn3nyw.streamlit.app/",
+    github: "https://github.com/surycodes"
+  },
+  {
+    title: "DSA Vault",
+    category: "React",
+    iamge: datastructuresImage,
+    description: "DSA Vault is a curated collection of Data Structures and Algorithms questions for efficient practice and interview preparation.",
+    link: "https://dsa-vault-one.vercel.app/",
+    github: "https://github.com/surycodes"
+  },
+  {
+    title: "Movie Recommendation System",
+    category: "Machine Learning",
+    image:movieImage,
+    description: "A content-based Movie Recommendation System built using Machine Learning techniques.",
+    link: "https://movierecommender-main-dcfrlkfvzksg8wdfkd6s3j.streamlit.app/",
+    github: "https://github.com/surycodes"
+  }
   ];
 
   const [currentProject, setCurrentProject] = useState<Project | null>(null);

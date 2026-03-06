@@ -1,8 +1,7 @@
-
-import { useState, useEffect } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Button } from './ui/button';
-import { PartyPopper } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
+import { PartyPopper } from "lucide-react";
 
 interface Question {
   question: string;
@@ -12,29 +11,29 @@ interface Question {
 
 const allQuestions: Question[] = [
   {
-    question: "Which technology is primarily used for styling in this portfolio?",
-    options: ["CSS", "Tailwind CSS", "SASS", "Styled Components"],
+    question: "Which programming language is primarily used in my Machine Learning projects?",
+    options: ["Java", "Python", "C++", "Ruby"],
     correct: 1
   },
   {
-    question: "What framework is this portfolio built with?",
-    options: ["Angular", "Vue", "React", "Svelte"],
+    question: "Which library is commonly used for building ML models?",
+    options: ["NumPy", "Scikit-learn", "Matplotlib", "Bootstrap"],
+    correct: 1
+  },
+  {
+    question: "What type of Machine Learning is used in the Diabetes Prediction System?",
+    options: ["Unsupervised Learning", "Reinforcement Learning", "Supervised Learning", "Deep Reinforcement Learning"],
     correct: 2
   },
   {
-    question: "What's my primary development focus?",
-    options: ["Frontend Only", "Backend Only", "Full Stack", "DevOps"],
+    question: "Which algorithm is used in the Diabetes Prediction System?",
+    options: ["Decision Tree", "K-Means", "Logistic Regression", "Naive Bayes"],
     correct: 2
   },
   {
-    question: "Which UI component library is used in this portfolio?",
-    options: ["Material UI", "Chakra UI", "shadcn/ui", "Ant Design"],
-    correct: 2
-  },
-  {
-    question: "What state management solution is used here?",
-    options: ["Redux", "MobX", "Zustand", "React Query"],
-    correct: 3
+    question: "Which tool is used to deploy my ML web app?",
+    options: ["Docker", "Streamlit", "Firebase", "Heroku"],
+    correct: 1
   }
 ];
 
@@ -48,7 +47,7 @@ const SkillQuiz = () => {
 
   const shuffleQuestions = () => {
     const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 3); // Get 3 random questions
+    return shuffled.slice(0, 3);
   };
 
   useEffect(() => {
@@ -70,11 +69,10 @@ const SkillQuiz = () => {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
+
       if (score + (isCorrect ? 1 : 0) === currentQuestions.length) {
         setCelebration(true);
-        setTimeout(() => {
-          setCelebration(false);
-        }, 2000);
+        setTimeout(() => setCelebration(false), 2000);
       }
     }
   };
@@ -84,6 +82,7 @@ const SkillQuiz = () => {
     if (allCorrect) {
       setCurrentQuestions(shuffleQuestions());
     }
+
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
@@ -94,14 +93,24 @@ const SkillQuiz = () => {
   if (!currentQuestions.length) return null;
 
   return (
-    <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+    <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-900 dark:to-black transition-colors">
+
       <div className="container mx-auto px-4">
-        <h2 className="section-title text-center mb-8">Test Your Knowledge</h2>
-        <Card className="max-w-2xl mx-auto">
+
+        <h2 className="section-title text-center mb-8 dark:text-white">
+          Test Your Knowledge
+        </h2>
+
+        <Card className="max-w-2xl mx-auto bg-white dark:bg-gray-800">
+
           <CardHeader>
-            <CardTitle className="text-center">Skills Quiz</CardTitle>
+            <CardTitle className="text-center dark:text-white">
+              Skills Quiz
+            </CardTitle>
           </CardHeader>
-          <CardContent className="p-6">
+
+          <CardContent className="p-6 relative">
+
             {celebration && (
               <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-10 animate-fade-in">
                 <div className="text-center text-white">
@@ -111,40 +120,50 @@ const SkillQuiz = () => {
                 </div>
               </div>
             )}
+
             {showScore ? (
-              <div className="text-center">
+              <div className="text-center dark:text-white">
                 <h3 className="text-2xl font-bold mb-4">
                   You scored {score} out of {currentQuestions.length}!
                 </h3>
+
                 <Button onClick={resetQuiz} variant="outline">
                   Try Again
                 </Button>
               </div>
             ) : (
               <div>
-                <h3 className="text-xl mb-4">
+
+                <h3 className="text-xl mb-4 dark:text-white">
                   {currentQuestions[currentQuestion].question}
                 </h3>
+
                 <div className="grid gap-3">
                   {currentQuestions[currentQuestion].options.map((option, index) => (
                     <Button
                       key={index}
                       onClick={() => handleAnswer(index)}
                       variant="outline"
-                      className="justify-start text-left hover:bg-portfolio-green/10"
+                      className="justify-start text-left hover:bg-portfolio-green/10 dark:hover:bg-gray-700"
                     >
                       {option}
                     </Button>
                   ))}
                 </div>
-                <div className="mt-4 text-sm text-gray-500">
+
+                <div className="mt-4 text-sm text-gray-500 dark:text-gray-400">
                   Question {currentQuestion + 1} of {currentQuestions.length}
                 </div>
+
               </div>
             )}
+
           </CardContent>
+
         </Card>
+
       </div>
+
     </section>
   );
 };

@@ -11,7 +11,7 @@ import SkillQuiz from "@/components/SkillQuiz";
 
 const Index = () => {
   return (
-    <div className="min-h-screen w-full overflow-x-hidden">
+    <div className="bg-white dark:bg-black text-black dark:text-white min-h-screen">
       <Navbar />
       <Hero />
       <About />
